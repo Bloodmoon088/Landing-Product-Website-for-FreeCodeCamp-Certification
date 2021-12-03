@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@300;400;700;900&display=swap");
+
+/*Reset Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Genos";
+  font-size: 62.5%;
+}
+
+html {
+  background-color: rgb(220, 220, 220);
+}
+
+/*General Styles*/
+
+h1 {
+  font-size: 4.2rem;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+i {
+  font-size: 5rem;
+}
+
+p,
+label,
+::placeholder,
+input[type ="submit"] {
+  font-size: 2rem;
+}
+
+img {
+  width: 20rem;
+}
+/*Header Styles*/
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color:rgb(80, 80, 80);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#header-img {
+  width: 50px;
+  align-self: center;
+}
+
+#logo {
+  display: flex;
+  margin-left: 5rem;
+}
+
+#nav-bar {
+  align-self: center;
+  margin-right: 5rem;
+}
+
+.nav-link {
+  font-size: 2.4rem;
+  text-decoration: none;
+  margin-right: 2rem;
+  color: white;
+}
+
+/*About Us Styles*/
+
+#about-us {
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/pexels-pixabay-275033.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#about-us-description {
+  font-size: 3.4rem;
+  color: white;
+  width: 30%;
+  align-self: center;
+  margin-right: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/*Services Styles*/
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 20%;
+  height: 50rem;
+  background-color: rgba(80, 80, 80);
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.services-container span i {
+  color: white;
+  text-align: center;
+}
+
+/*Gallery Styles*/
+
+#gallery-container{
+    width: 100%;
+}
+
+#gallery-container h2{
+    font-size: 8rem;
+    margin-right: 0.2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+    color: rgb(220, 220, 220);
+}
+
+#gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 47vh 47vh;
+  gap: 0px 0px;
+  grid-template-areas:
+    "image01 image02 image03"
+    "image04 image05 image06";
+}
+
+#image01 {
+  grid-area: image01;
+  background-image: url("../img/pexels-alena-darmel-7862349.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#image02 {
+  grid-area: image02;
+  background-image: url("../img/pexels-lisa-4511372.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#image03 {
+  grid-area: image03;
+  background-image: url("../img/pexels-pixabay-275033.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#image04 {
+  grid-area: image04;
+  background-image: url("../img/pexels-rodnae-productions-7915357.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#image05 {
+  grid-area: image05;
+  background-image: url("../img/pexels-wendy-wei-2881205.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#image06 {
+  grid-area: image06;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../img/pexels-czerrysh-ann-6606371.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter: blur(6px);
+}
+
+/*Activities Container Styles*/
+
+#activities{
+    width: 100%;
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+#activities-header h3{
+    font-size: 8rem;
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+#video-container{
+    background: rgb(154,154,154);
+    background: linear-gradient(90deg, rgba(154,154,154,1) 0%, rgba(73,73,73,1) 50%, rgba(154,154,154,1) 100%);
+}
+
+#video{
+    width: 39%;
+    height: 43vh;
+}
+
+/*Contact Us Styles*/
+
+footer{
+    width: 100%;
+    height: 20vh;
+    padding-bottom: 2rem;
+    background-color: rgb(40, 40, 40);
+}
+
+#contact-us h3{
+    font-size: 8rem;
+    text-align: center;
+    color: white;
+}
+
+#form{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#email{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem auto;
+    height: 5rem;
+}
+
+#submit{
+    width: 30%;
+    align-self: center;
+}
+
+
+/*Esta página no contiene responsive, a insertar en un futuro*/
+@media (max-width: 20px) {
+
+}
